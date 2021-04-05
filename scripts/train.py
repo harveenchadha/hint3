@@ -152,7 +152,9 @@ if __name__ == "__main__":
     os.makedirs('../checkpoints/fold_'+str(valid_fold), exist_ok=True)
     os.makedirs('../logs/fold_'+str(valid_fold), exist_ok=True)
     
-    #train_model(valid_fold, dataset_train, dataset_valid)
+    print("Training Started")
+    train_model(valid_fold, dataset_train, dataset_valid)
+    print("Training Ended")
     
     execute_inference(train_data, valid_data)
     
