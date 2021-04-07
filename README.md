@@ -2,7 +2,7 @@
 
 I treat this as a supervised multi class text classification problem. My intention here is to use an End to End DL solution.
 
-I use an uncased bert in the embedding layers and stacked two fully connected layers on top of it to make it classify text into one of the 21 categories.
+I use an uncased base bert in the embedding layers and stacked two fully connected layers on top of it to make it classify text into one of the 21 categories.
 
 ### Pros
 1. No domain knowledge required to execute the task.
@@ -34,6 +34,8 @@ data -> raw -> contains the raw data
 data -> folds.csv -> contains the data in multiple folds
 
 logs -> contains the training tensorboard logs in addition to terminal logs. To check the terminal logs check the training.out file for each fold.
+
+results -> fold wise prediction results of the model
 
 notebooks -> evaluate_oof -> calculates the out of fold accuracy on training and validation set.
 
